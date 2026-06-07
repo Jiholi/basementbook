@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지하북스 & (주)윤성스터디 - 도서 자료실</title>
+<style>
+/* 전체 기본 스타일 선언 */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+background-color: #f8f9fa;
+color: #333;
+line-height: 1.6;
+}
+
+/* 헤더 스타일 */
+header {
+background-color: #1e293b;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+border-bottom: 4px solid #3b82f6;
+}
+
+header h1 {
+font-size: 1.8rem;
+font-weight: 700;
+}
+
+header p {
+font-size: 0.9rem;
+color: #94a3b8;
+margin-top: 5px;
+}
+
+/* 메인 컨테이너 */
+.container {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+/* 상단 검색 및 필터 바 */
+.search-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #fff;
+padding: 15px 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+padding: 8px 12px;
+width: 250px;
+border: 1px solid #cbd5e1;
+border-radius: 4px;
+font-size: 0.9rem;
+}
+
+.search-box button {
+padding: 8px 16px;
+background-color: #3b82f6;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+margin-left: 5px;
+}
+
+.search-box button:hover {
+background-color: #2563eb;
+}
+
+/* 게시판 테이블 스타일 */
+.table-wrapper {
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+}
+
+th, td {
+padding: 15px 20px;
+border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+background-color: #f1f5f9;
+color: #475569;
+font-weight: 600;
+font-size: 0.95rem;
+}
+
+td {
+font-size: 0.9rem;
+}
+
+tr:hover {
+background-color: #f8fafc;
+}
+
+/* 다운로드 버튼 스타일 */
+.btn-download {
+display: inline-block;
+padding: 6px 12px;
+background-color: #10b981;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+font-size: 0.85rem;
+font-weight: 500;
+transition: background 0.2s;
+}
+
+.btn-download:hover {
+background-color: #059669;
+}
+
+/* 구분 태그 스타일 */
+.badge {
+display: inline-block;
+padding: 3px 8px;
+font-size: 0.75rem;
+font-weight: 600;
+border-radius: 4px;
+color: #fff;
+}
+.badge-primary { background-color: #3b82f6; }
+.badge-secondary { background-color: #64748b; }
+
+/* 페이지네이션 */
+.pagination {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+gap: 5px;
+}
+
+.pagination a {
+padding: 8px 12px;
+border: 1px solid #cbd5e1;
+background-color: #fff;
+color: #333;
+text-decoration: none;
+border-radius: 4px;
+font-size: 0.9rem;
+}
+
+.pagination a.active {
+background-color: #3b82f6;
+color: #fff;
+border-color: #3b82f6;
+}
+
+/* 푸터 스타일 */
+footer {
+background-color: #1e293b;
+color: #94a3b8;
+text-align: center;
+padding: 20px 0;
+font-size: 0.85rem;
+margin-top: 60px;
+border-top: 1px solid #334155;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>지하북스 & (주)윤성스터디</h1>
+<p>교재 정답 및 학습 해설 자료실</p>
+</header>
+
+<div class="container">
+
+<div class="search-container">
+<div>
+<span style="font-weight: 600; color: #475569;">총 4개의 자료가 있습니다.</span>
+</div>
+<div class="search-box">
+<input type="text" placeholder="교재명 입력...">
+<button type="button">검색</button>
+</div>
+</div>
+
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="width: 8%;">번호</th>
+<th style="width: 15%;">구분</th>
+<th style="width: 52%;">교재명 및 자료 제목</th>
+<th style="width: 13%;">등록일</th>
+<th style="width: 12%; text-align: center;">다운로드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td><span class="badge badge-primary">지하북스</span></td>
+<td style="font-weight: 500;">성공적인 직업생활 정답 및 해설</td>
+<td>2026-03-15</td>
+<td style="text-align: center;"><a href="#" class="btn-download">PDF 다운</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="badge badge-secondary">윤성스터디</span></td>
+<td style="font-weight: 500;">성공적인 직업생활 평가원 기출 모음집</td>
+<td>2026-02-10</td>
+<td style="text-align: center;"><a href="#" class="btn-download">PDf 다운</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="badge badge-primary">지하북스</span></td>
+<td style="font-weight: 500;">상업 경제 개념서</td>
+<td>2026-01-22</td>
+<td style="text-align: center;"><a href="#" class="btn-download">PDF 다운</a></td>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="badge badge-secondary">윤성스터디</span></td>
+<td style="font-weight: 500;">성공적인 직업생활 개념서</td>
+<td>2026-01-05</td>
+<td style="text-align: center;"><a href="#" class="btn-download">PDF 다운</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="pagination">
+<a href="#">«</a>
+<a href="#" class="active">1</a>
+<a href="#">»</a>
+</div>
+
+</div>
+
+<footer>
+<p>Copyright © 지하북스 & (주)윤성스터디 All Rights Reserved.</p>
+<p style="margin-top: 5px; font-size: 0.8rem; color: #64748b;">본 자료실의 무단 복제 및 상업적 배포를 금합니다.</p>
+</footer>
+
+</body>
+</html>
